@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Behavioral Content Intelligence System</title>
+  <meta name="description" content="Analyze and improve your content using behavioral and SEO insights." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Behavioral Content Intelligence System</h1>
+  <div class="container">
+    <label for="contentInput">Paste Your Content:</label>
+    <textarea id="contentInput" rows="10" placeholder="Paste your blog or ad copy here..."></textarea>
+
+    <label for="keywords">Target Keywords (comma-separated):</label>
+    <input type="text" id="keywords" placeholder="e.g. digital marketing, SEO, content strategy" />
+
+    <button onclick="analyzeContent()">Analyze</button>
+
+    <div class="result" id="resultBox" style="display: none;">
+      <p class="score" id="contentScore">Score: </p>
+      <ul class="suggestions" id="suggestionsList"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

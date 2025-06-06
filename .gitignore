@@ -1,0 +1,25 @@
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore node modules if using npm (optional in future)
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore build folders (if ever added)
+dist/
+build/
+
+# Ignore temporary files
+*.tmp
+*.swp
+*.bak
+
+# Ignore environment or config files
+.env
+
+# Ignore editor settings
+.vscode/
+.idea/
