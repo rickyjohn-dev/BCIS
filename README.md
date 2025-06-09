@@ -8,14 +8,13 @@
   <a href="#license"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="License" /></a>
 </p>
 
-✨ Overview
+## ✨ Overview
 
 BCIS helps digital communicators make data-driven decisions. Whether you're optimizing for UX, tone, or conversion — BCIS gives instant, visual feedback on how your content performs against strategic keyword metrics.
 
 
----
 
-🚀 Features
+## 🚀 Features
 
 🔍 Smart Analysis
 
@@ -47,7 +46,7 @@ BCIS helps digital communicators make data-driven decisions. Whether you're opti
 
 ---
 
-📦 Changelog
+## 📦 Changelog
 
 v1.1.0 – June 9, 2025
 
@@ -68,7 +67,7 @@ Base keyword logic + structure setup
 
 ---
 
-📌 Roadmap
+## 📌 Roadmap
 
 [ ] Export to PDF / CSV
 
@@ -99,7 +98,7 @@ open index.html
 
 ---
 
-🤝 Contribute
+## 🤝 Contribute
 
 Want to add magic to BCIS? Fork, feature, and PR!
 
@@ -108,14 +107,14 @@ git checkout -b feature/cool-idea
 
 ---
 
-📄 License
+## 📄 License
 
 MIT License — free for personal and commercial use.
 
 
 ---
 
-👤 Author
+## 👤 Author
 
 > Ricky John
 Content Systems Designer | Digital Communicator
