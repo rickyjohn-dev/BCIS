@@ -1,5 +1,4 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/rickyjohn-dev/BCIS/main/assets/banner.png" alt="BCIS Banner" width="100%" />
 </p><h1 align="center">🧠 Behavioral Content Intelligence System</h1><p align="center">
   <i>Analyze. Visualize. Strategize.</i><br/>
   <b>A browser-based intelligence engine to decode behavioral signals from written content.</b>
