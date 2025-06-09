@@ -7,7 +7,6 @@
   <a href="https://github.com/rickyjohn-dev/BCIS"><img src="https://img.shields.io/github/stars/rickyjohn-dev/BCIS?style=for-the-badge" alt="GitHub Stars" /></a>
   <a href="#license"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="License" /></a>
 </p>
----
 
 ✨ Overview
 
