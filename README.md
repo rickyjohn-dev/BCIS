@@ -1,30 +1,124 @@
+🧠 Behavioral Content Intelligence System (BCIS)
 
-# Behavioral Content Intelligence System (BCIS)
+BCIS is a lightweight, browser-based tool for analyzing and visualizing the behavioral relevance of content based on user-defined keywords. Ideal for writers, marketers, content strategists, and UX researchers.
 
-A browser-based tool that scores and analyzes written content using behavioral insights, clarity metrics, and keyword alignment to optimize content for performance.
+Live Demo: rickyjohn-dev.github.io/BCIS
 
-## 🚀 Features
 
-- 🧠 Behavioral analysis: CTA presence, tone check, paragraph balance
-- 🔍 SEO feedback: keyword usage and density
-- 🧾 Real-time scoring (0–100)
-- 📋 Actionable suggestions for improvement
-- ✅ Client-side, no login, privacy-friendly
+---
 
-## 🛠️ Tech Stack
+🚀 Features
 
-- HTML5 + CSS3
-- JavaScript (Vanilla)
-- Optional: GitHub Pages for deployment
+🔍 Text Analysis
 
-## 📸 Screenshot
+Keyword Matching: Input custom keywords to analyze their presence in the content.
 
-![BCIS Screenshot](./assets/screenshot.png)
+Keyword Density Counter: Shows frequency of keywords in the given text.
 
-## 📄 License
+Live Word Count: Updates instantly as the user types or pastes text.
 
-MIT License — free to use, share, and modify.
 
-## ✨ Created By
+📊 Visualizations
 
-[Ricky John](https://github.com/rickyjohn-dev)
+Keyword Frequency Chart: Bar chart representing how often each keyword appears.
+
+Keyword Highlighting: Highlights keywords directly within the original text.
+
+
+🛠️ User Experience Enhancements
+
+Clean UI with input fields for content and keyword list.
+
+Responsive design for both desktop and mobile users.
+
+Instant analysis with one click.
+
+
+
+---
+
+📦 Changelog
+
+v1.1.0 (June 9, 2025)
+
+✅ Added keyword highlighting in the original text
+
+✅ Integrated Chart.js bar graph to visualize keyword frequency
+
+✅ Live word count display while typing or pasting content
+
+🧪 Improved UI with consistent spacing, modern design, and better interaction flow
+
+
+v1.0.0
+
+🟢 Initial release with:
+
+Text input
+
+Keyword parsing
+
+Score calculation placeholder
+
+
+
+
+---
+
+🧹 Installation / Usage
+
+💻 Online
+
+Just visit the live version:
+
+> https://rickyjohn-dev.github.io/BCIS
+
+
+
+🛠️ Local
+
+Clone and run on your system:
+
+git clone https://github.com/rickyjohn-dev/BCIS.git
+cd BCIS
+open index.html   # or double-click it
+
+
+---
+
+📌 Roadmap
+
+[ ] Export Analysis to PDF/CSV
+
+[ ] AI Feedback Generator
+
+[ ] Readability Scoring (Flesch, Gunning Fog)
+
+[ ] Behavioral Tag Classifier (UX, Copywriting, Technical)
+
+[ ] Dark Mode Support
+
+
+
+---
+
+🤝 Contributing
+
+Contributions are welcome! Fork the repository, make improvements, and submit a pull request.
+
+
+---
+
+📄 License
+
+This project is open-source under the MIT License.
+
+
+---
+
+👤 Author
+
+Ricky John
+Content Strategist & Developer
+Portfolio | LinkedIn
+
