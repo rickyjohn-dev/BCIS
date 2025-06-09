@@ -1,29 +1,116 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Behavioral Content Intelligence System</title>
-  <meta name="description" content="Analyze and improve your content using behavioral and SEO insights." />
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Behavioral Content Intelligence System</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        textarea, input {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #highlightedOutput mark {
+            background-color: yellow;
+        }
+        #highlightedOutput {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+            white-space: pre-wrap;
+        }
+    </style>
 </head>
 <body>
-  <h1>Behavioral Content Intelligence System</h1>
-  <div class="container">
-    <label for="contentInput">Paste Your Content:</label>
-    <textarea id="contentInput" rows="10" placeholder="Paste your blog or ad copy here..."></textarea>
+    <h1>Behavioral Content Intelligence System</h1><label for="inputText">Paste Content:</label>
+<textarea id="inputText" rows="10"></textarea>
 
-    <label for="keywords">Target Keywords (comma-separated):</label>
-    <input type="text" id="keywords" placeholder="e.g. digital marketing, SEO, content strategy" />
+<label for="keywords">Enter Keywords (comma-separated):</label>
+<input type="text" id="keywords" placeholder="e.g. engagement, conversion, retention">
 
-    <button onclick="analyzeContent()">Analyze</button>
+<button id="analyzeButton">Analyze</button>
 
-    <div class="result" id="resultBox" style="display: none;">
-      <p class="score" id="contentScore">Score: </p>
-      <ul class="suggestions" id="suggestionsList"></ul>
-    </div>
-  </div>
-  <script src="script.js"></script>
+<p>Word Count: <span id="wordCount">0</span></p>
+
+<div id="highlightedOutput"></div>
+
+<canvas id="keywordChart" width="400" height="200"></canvas>
+
+<script>
+    function highlightKeywords(text, keywords) {
+        let escaped = keywords.map(k => k.trim()).filter(k => k).join('|').replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        let regex = new RegExp(`\\b(${escaped})\\b`, 'gi');
+        return text.replace(regex, '<mark>$1</mark>');
+    }
+
+    function countKeywords(text, keywords) {
+        let counts = {};
+        let words = text.toLowerCase().split(/\W+/);
+        keywords.forEach(k => {
+            let key = k.trim().toLowerCase();
+            counts[key] = words.filter(w => w === key).length;
+        });
+        return counts;
+    }
+
+    function renderChart(data) {
+        let ctx = document.getElementById('keywordChart').getContext('2d');
+        if (window.chart) window.chart.destroy();
+        window.chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: Object.keys(data),
+                datasets: [{
+                    label: 'Keyword Frequency',
+                    data: Object.values(data),
+                    backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    }
+
+    document.getElementById('inputText').addEventListener('input', () => {
+        let text = document.getElementById('inputText').value;
+        let count = text.trim().split(/\s+/).filter(word => word).length;
+        document.getElementById('wordCount').innerText = count;
+    });
+
+    document.getElementById('analyzeButton').addEventListener('click', () => {
+        let text = document.getElementById('inputText').value;
+        let keywords = document.getElementById('keywords').value.split(',');
+        let highlighted = highlightKeywords(text, keywords);
+        document.getElementById('highlightedOutput').innerHTML = highlighted;
+
+        let counts = countKeywords(text, keywords);
+        renderChart(counts);
+    });
+</script>
+
 </body>
 </html>
