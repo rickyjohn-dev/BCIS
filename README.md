@@ -1,37 +1,49 @@
-🧠 Behavioral Content Intelligence System (BCIS)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/rickyjohn-dev/BCIS/main/assets/banner.png" alt="BCIS Banner" width="100%" />
+</p><h1 align="center">🧠 Behavioral Content Intelligence System</h1><p align="center">
+  <i>Analyze. Visualize. Strategize.</i><br/>
+  <b>A browser-based intelligence engine to decode behavioral signals from written content.</b>
+</p><p align="center">
+  <a href="https://rickyjohn-dev.github.io/BCIS/"><img src="https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge&logo=google-chrome" alt="Live Demo" /></a>
+  <a href="https://github.com/rickyjohn-dev/BCIS"><img src="https://img.shields.io/github/stars/rickyjohn-dev/BCIS?style=for-the-badge" alt="GitHub Stars" /></a>
+  <a href="#license"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="License" /></a>
+</p>
+---
 
-BCIS is a lightweight, browser-based tool for analyzing and visualizing the behavioral relevance of content based on user-defined keywords. Ideal for writers, marketers, content strategists, and UX researchers.
+✨ Overview
 
-Live Demo: rickyjohn-dev.github.io/BCIS
+BCIS helps digital communicators make data-driven decisions. Whether you're optimizing for UX, tone, or conversion — BCIS gives instant, visual feedback on how your content performs against strategic keyword metrics.
 
 
 ---
 
 🚀 Features
 
-🔍 Text Analysis
+🔍 Smart Analysis
 
-Keyword Matching: Input custom keywords to analyze their presence in the content.
+🧾 Custom Keyword Matching — Highlight target phrases
 
-Keyword Density Counter: Shows frequency of keywords in the given text.
+📊 Keyword Frequency Tracker — Monitor frequency trends
 
-Live Word Count: Updates instantly as the user types or pastes text.
-
-
-📊 Visualizations
-
-Keyword Frequency Chart: Bar chart representing how often each keyword appears.
-
-Keyword Highlighting: Highlights keywords directly within the original text.
+🧠 Real-Time Word Count — Track size while typing
 
 
-🛠️ User Experience Enhancements
+📊 Visuals that Speak
 
-Clean UI with input fields for content and keyword list.
+📈 Interactive Bar Chart — See term distribution clearly
 
-Responsive design for both desktop and mobile users.
+✨ Contextual Highlighting — Matched terms highlighted live
 
-Instant analysis with one click.
+🧩 Minimal Interface — Clean, distraction-free layout
+
+
+💡 UX-First
+
+⚡ Fast. Lightweight. No backend required.
+
+📱 Fully responsive for mobile
+
+🖼 Beautiful, modern layout with no clutter
 
 
 
@@ -39,86 +51,87 @@ Instant analysis with one click.
 
 📦 Changelog
 
-v1.1.0 (June 9, 2025)
+v1.1.0 – June 9, 2025
 
-✅ Added keyword highlighting in the original text
+✅ Keyword Highlighting
 
-✅ Integrated Chart.js bar graph to visualize keyword frequency
+✅ Interactive Graph via Chart.js
 
-✅ Live word count display while typing or pasting content
+✅ Live Word Count
 
-🧪 Improved UI with consistent spacing, modern design, and better interaction flow
-
-
-v1.0.0
-
-🟢 Initial release with:
-
-Text input
-
-Keyword parsing
-
-Score calculation placeholder
+🎨 Polished UI + UX
 
 
+v1.0.0 – Initial Release
 
+Base keyword logic + structure setup
 
----
-
-🧹 Installation / Usage
-
-💻 Online
-
-Just visit the live version:
-
-> https://rickyjohn-dev.github.io/BCIS
-
-
-
-🛠️ Local
-
-Clone and run on your system:
-
-git clone https://github.com/rickyjohn-dev/BCIS.git
-cd BCIS
-open index.html   # or double-click it
 
 
 ---
 
 📌 Roadmap
 
-[ ] Export Analysis to PDF/CSV
+[ ] Export to PDF / CSV
 
-[ ] AI Feedback Generator
+[ ] Smart Content Feedback (AI Suggestions)
 
-[ ] Readability Scoring (Flesch, Gunning Fog)
+[ ] Reading Difficulty Scores
 
-[ ] Behavioral Tag Classifier (UX, Copywriting, Technical)
+[ ] UX Style Classifier
 
-[ ] Dark Mode Support
+[ ] Dark Mode Toggle
 
 
 
 ---
 
-🤝 Contributing
+🧰 Setup
 
-Contributions are welcome! Fork the repository, make improvements, and submit a pull request.
+🌐 Use Online
+
+👉 BCIS Live
+
+💻 Run Locally
+
+git clone https://github.com/rickyjohn-dev/BCIS.git
+cd BCIS
+open index.html
+
+
+---
+
+🤝 Contribute
+
+Want to add magic to BCIS? Fork, feature, and PR!
+
+git checkout -b feature/cool-idea
 
 
 ---
 
 📄 License
 
-This project is open-source under the MIT License.
+MIT License — free for personal and commercial use.
 
 
 ---
 
 👤 Author
 
-Ricky John
-Content Strategist & Developer
-Portfolio | LinkedIn
+> Ricky John
+Content Systems Designer | Digital Communicator
+🌐 Website ・ 🔗 LinkedIn
 
+
+
+
+---
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Clarity-Driven-green?style=flat-square" />
+  <img src="https://img.shields.io/badge/UX-Aligned-blue?style=flat-square" />
+  <img src="https://img.shields.io/badge/Built%20With-Ethics-critical?style=flat-square" />
+</p><p align="center">
+  <i>BCIS — where ethical design meets content strategy.</i>
+</p>
